@@ -4,6 +4,7 @@
 Desarrolladores
 - Melissa Foronda
 - Andrea Marquez
+
 Trabajado sobre el proyeto de:
 - Walter y Luis Miguel
 

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Batalla naval</title>
+    <style>
+    *{background-color: #B4DEF8}
+		.titulo{position: absolute;
+		        top: 10%;
+		        left: 25%;
+		        font-size: 350%;
+		        font-family: Impact;
+		        color: #228097;
+		    	background: transparent;}
+		.titulo2{position: absolute;
+		        top: 50%;
+		        left: 10%;
+		        font-size: 100%;
+		        font-family: Impact;
+		        color: #228097;
+		    	background: transparent;}
+		.titulo3{position: absolute;
+		        top: 40%;
+		        left: 10%;
+		        font-size: 100%;
+		        font-family: Impact;
+		        color: #228097;
+		    	background: transparent;}
+        .ingresar{position: absolute;
+		          top: 93%;
+		          left: 37%;
+		          width: 23%;
+		          font-size: 30px;
+          		  font-family: Tahoma;
+          		  color: #228097;
+		          height: 13%;
+		          border: solid;
+		          border-radius: 40px;
+		          border-color: black;
+		          background-color: white;}
+		.box{position: absolute;
+		        top: 25%;
+		        left: 26%;
+		        height: 300px;
+		        width: 650px;
+		        background-color: white;
+		    	border: solid;}
+	</style>
+</head>
+<body>
+    <div class="box">
+	<div class="titulo">BATALLA NAVAL</div>
+	<div class="titulo3">Id de las partidas guardadas: </div>
+	<center><div class="titulo2">{{partidas}}</div></center>
+	{% if error %}
+	<p>{{ error }}</p>
+    {% endif %}
+	<a href="/eliminar_partida"><input type="submit" value="Eliminar" class="ingresar"></a></div>
+</body>
+</html>

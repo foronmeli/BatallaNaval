@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Batalla naval</title>
+    <style>
+		*{background-color: #B4DEF8}
+		.titulo{position: absolute;
+		        top: 10%;
+		        left: 10%;
+		        font-size: 350%;
+		        font-family: Impact;
+		        color: #228097;
+		    	background: transparent;}
+		.titulo2{position: absolute;
+		        top: 40%;
+		        left: 10%;
+		        font-size: 100%;
+		        font-family: Impact;
+		        color: #228097;
+		    	background: transparent;}
+		.ingresar{position: absolute;
+		          top: 93%;
+		          left: 41%;
+		          width: 20%;
+		          font-size: 30px;
+          		  font-family: Tahoma;
+          		  color: #228097;
+		          height: 13%;
+		          border: solid;
+		          border-radius: 40px;
+		          border-color: black;
+		          background-color: white;}
+		.box{position: absolute;
+		        top: 25%;
+		        left: 26%;
+		        height: 300px;
+		        width: 650px;
+		        background-color: white;
+		    	border: solid;}
+        .box2{position: absolute;
+		        top: 50%;
+		        left: 10%;
+		        height: 40px;
+		        width: 190px;
+                font-size: 100%;
+		        background-color: white;
+		    	border: solid;}
+    </style>
+</head>
+<body>
+    <div class="box"><div class="titulo">Nombre partida</div>
+    <form action="/guardado" method="get">
+        <div class="titulo2">Ingrese el nombre de la partida:</div>
+        <input type="text" name="nombre" required class="box2">
+		<input type="hidden" name="tablero" value="{{ tablero_html|safe }}">
+        <input type="submit" value="Guardar" class="ingresar"></a>
+    </form></div>
+</body>
+</html>
